@@ -73,8 +73,10 @@ function App() {
     }
     const newExpression = newParts.join(" ");
     if (isOperator(newExpression.charAt(0))) {
+       // eslint-disable-next-line 
       setAnswer(eval(answer + newExpression));
     } else {
+       // eslint-disable-next-line 
       setAnswer(eval(newExpression) );
     }
     setExpression("");
